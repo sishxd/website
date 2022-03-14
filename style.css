@@ -2,14 +2,13 @@
     user-select: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    box-sizing: border-box;
   }
   ::webkit-scrollbar {
     display: none;
   }
   body {
     background: linear-gradient(90deg, #19182b, #040416);
-    overflow: hidden;
   }
   .main {
     padding: 15px;
@@ -45,9 +44,80 @@
     font-size: 15px;
     transition: 0.8s;
     margin-left: 1%;
+    text-decoration: none;
   }
   .link:hover{
     background: #c7c7c7;
     color: black;
     transition: 0.8s;
   }
+  .projects{
+    margin: 2%;
+  }
+  .projects h2{
+    margin: 5%;
+    text-align: center;
+    color: #4747ff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+  }
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  .row {margin: 0 -5px;}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background: rgba(209, 209, 209, 0.2);
+    border: 2px solid #c7c7c7;
+    border-radius: 10px;
+    height: 300px;
+  }
+  .card h2{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2%;
+  }
+  .card p{
+    color: rgb(206, 206, 206);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 1s;
+  }
+  .card p:hover{
+    color: white;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .socials{
+    margin: auto;
+    text-align: center;
+    margin: 5%;
+  }
+  .socials .social-link{
+    color: white;
+    text-decoration: none;
+    margin: 1%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
